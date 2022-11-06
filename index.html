@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Relatório mensal de receitas brutas</title>
+</head>
+
+<body class="m-2">
+  <main class="container">
+    <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+      <div class="col text-center">
+        <span>RELATÓRIO MENSAL DAS RECEITAS BRUTAS</span>
+      </div>
+    </div>
+
+    <!--DADOS DO EMPREENDEDOR-->
+    <article>
+      <!--CNPJ-->
+      <div class="row border flex-column flex-md-row m-0 py-2 align-items-center">
+        <div class="col-md-8 text-md-end">
+          <span>CNPJ:</span>
+        </div>
+        <div class="col-md-4">
+          <input type="text" name="" id="cnpj" class="form-control w-100">
+        </div>
+      </div>
+
+      <!--EMPREENDEDOR-->
+      <div class="row border flex-column flex-md-row m-0 py-2 align-items-center">
+        <div class="col-md-8 text-md-end">
+          <span>Empreendedor individual:</span>
+        </div>
+        <div class="col-md-4">
+          <input type="text" name="" id="empreendedor" class="form-control w-100">
+        </div>
+      </div>
+
+      <!--APURAÇÃO-->
+      <div class="row border flex-column flex-md-row m-0 py-2 align-items-center">
+        <div class="col-md-8 text-md-end">
+          <span>Período de apuração:</span>
+        </div>
+        <div class="col-md-4">
+          <input type="date" name="" id="apuracao" class="form-control w-100">
+        </div>
+      </div>
+    </article>
+
+    <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (COMÉRCIO)-->
+    <article>
+      <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+        <div class="col text-center text-md-start">
+          <span>RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (COMÉRCIO)</span>
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (COMÉRCIO) SEM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>I – Revenda de mercadorias com dispensa de emissão de documento fiscal</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="number" class="form-control" id="v1" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (COMÉRCIO) COM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>II – Revenda de mercadorias com documento fiscal emitido</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="number" class="form-control" id="v2" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (COMÉRCIO) TOTAL-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>III – Total das receitas com revenda de mercadorias (I + II)</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="number" class="form-control" id="total" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+    </article>
+
+    <!--RECEITA BRUTA MENSAL – VENDA DE PRODUTOS INDUSTRIALIZADOS (INDÚSTRIA)-->
+    <article>
+      <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+        <div class="col text-center text-md-start">
+          <span>RECEITA BRUTA MENSAL – VENDA DE PRODUTOS INDUSTRIALIZADOS (INDÚSTRIA)</span>
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (INDÚSTRIA) SEM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>IV – Venda de produtos industrializados com dispensa de emissão de documento fiscal</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (INDÚSTRIA) COM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>V – Venda de produtos industrializados com documento fiscal emitido</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – REVENDA DE MERCADORIAS (INDÚSTRIA) TOTAL-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>VI – Total das receitas com venda de produtos industrializados (IV + V)</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+    </article>
+
+    <!--RECEITA BRUTA MENSAL – PRESTAÇÃO DE SERVIÇOS-->
+    <article>
+      <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+        <div class="col text-center text-md-start">
+          <span>RECEITA BRUTA MENSAL – PRESTAÇÃO DE SERVIÇOS</span>
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – PRESTAÇÃO DE SERVIÇOS SEM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>VII – Receita com prestação de serviços com dispensa de emissão de documento fiscal</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – PRESTAÇÃO DE SERVIÇOS COM NOTA-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>VIII – Receita com prestação de serviços com documento fiscal emitido</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--RECEITA BRUTA MENSAL – PRESTAÇÃO DE SERVIÇOS TOTAL-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>IX – Total das receitas com prestação de serviços (VII + VIII)</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+
+      <!--TOTAL GERAL DAS RECEITAS BRUTAS DO MÊS-->
+      <div class="row border m-0 py-2 align-items-center">
+        <div class="col-md-8 py-1 text-md-start">
+          <span>X – Total geral das receitas brutas no mês (III + VI + IX)</span>
+        </div>
+        <div class="input-group col py-1">
+          <span class="input-group-text">R$</span>
+          <input type="text" class="form-control" placeholder="Valores em reais" aria-label="revenda-mercadorias"
+            aria-describedby="revenda-mercadorias">
+        </div>
+      </div>
+    </article>
+
+    <!--LOCAL E DATA E ASSINATURA-->
+    <article>
+      <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+        <div class="col-md-8 py-1 text-center text-md-start">
+          <span>LOCAL E DATA:</span>
+          <input type="text" name="" id="local-data" class="form-control w-100">
+        </div>
+        <div class="col-md-4 text-center text-md-start py-3 py-md-1">
+          <span>ASSINATURA DO EMPRESÁRIO:</span>
+          <input type="text" name="" id="local-data" class="form-control w-100">
+        </div>
+      </div>
+    </article>
+
+    <!--ANEXOS-->
+    <article>
+      <div class="row border m-0 py-2 bg-dark bg-opacity-10">
+        <div class="col text-center text-md-start">
+          <p>ENCONTRAM-SE ANEXADOS A ESTE RELATÓRIO:</p>
+          <p>– Os documentos fiscais comprobatórios das entradas de mercadorias e serviços tomados referentes ao
+            período;</p>
+          <p>– As notas fiscais relativas às operações ou prestações realizadas eventualmente emitidas.</p>
+        </div>
+      </div>
+    </article>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
